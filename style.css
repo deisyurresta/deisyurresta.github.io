@@ -1,40 +1,65 @@
 html{
-    background-color: rgb(70, 3, 87);
+    background-color: #56c248;
 }
+
 *{
-    border:solid 1px rgba(0, 0, 0, 0)
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    padding: 3px;
+    margin: 0;
+    color: #084713;
 }
+
 main{
     display: flex;
+    flex-flow: column;
+    align-items: center;  
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
+    gap: 2rem;
+    min-height: 80vh;
+    text-align: center;    
 }
-.titulo h1{
-    color: rgb(255, 255, 255);
-  font-family: "Momo Signature", cursive;
-  font-weight: 100;
-  font-style: bold;
-  font-size: 50px;
-}
-.nav a {
-  color: blue;
-  text-decoration: rgb(255, 255, 255);
-  background-color: white;
-  padding: 1rem;
-  display: inline-block;
-  margin: 0.5rem;
-}
-.nav ul{
-    list-style: none;
+
+ul{
+    list-style-type: none;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    padding: 1px;
+    align-items: center; 
 }
+
+li a{
+    margin-block: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    padding-inline: 1rem;
+    padding-block: 0.7rem;
+    border-radius: 5px;
+    border: solid 1px rgb(115, 255, 73);
+    transition: all .3s ease-in-out;
+}
+
 li a:hover{
-    background-color: salmon;
-    border-color: solid 1px black;
-    transform: scale(1.1) rotate(2deg)
+    background-color: #18fc03;
+    border: solid 1px rgb(255, 255, 255);
+    transform: scale(1.1) rotate(2deg);
+}
+
+.titulo h1{
+    	text-align: center;
+        font-size: 7rem;
+  font-family: "Pirata One", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  text-shadow: 3px 3px 0 #7cff9b;
+
+}
+
+.titulo p{
+    color: rgb(24, 68, 38);
+	text-align: center;
+	font-style: normal;
+	font-size: 1.2rem;
 }
